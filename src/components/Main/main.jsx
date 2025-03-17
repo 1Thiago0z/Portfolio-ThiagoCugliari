@@ -181,7 +181,7 @@ const Main = () => {
                                 <div className="flex items-center justify-center mt-4 gap-2">
                                     <a
                                         className="bg-blue-transparent border border-blue-900 text-white py-2 px-6 text-lg font-semibold hover:bg-blue-600 transition ease flex items-center gap-2"
-                                        href="https://doctrina-imparable.vercel.app/"
+                                        href="https://doctrina-imparable--one.vercel.app/"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
