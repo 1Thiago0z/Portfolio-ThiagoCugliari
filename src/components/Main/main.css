@@ -1,0 +1,85 @@
+:root {
+    /* Colores principales */
+    --color-primary: #1d2329;
+    --color-secondary: #ffffff;
+    --color-tertiary: #0b243b;
+
+    /* Tipografías */
+    --font-family-sans: 'Roboto', sans-serif;
+    --font-family-serif: 'Merriweather', serif;
+}
+
+.scale-proyect {
+    transition: transform 0.3s ease-in-out;
+}
+
+.scale-proyect:hover {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.02);
+}
+
+
+.scale-yo {
+    transition: transform 0.3s ease-in-out;
+}
+
+.scale-yo:hover {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.02);
+}
+
+
+.linea {
+    border: none;
+    border-top: 7px solid rgb(0, 0, 0);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 0px;
+    width: 200px;
+}
+
+.linea-2 {
+    border: none;
+    border-top: 7px solid rgb(255, 255, 255);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+}
+
+.linea-3 {
+    border: none;
+    border-top: 7px solid rgb(0, 0, 0);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.linea-4 {
+    border: none;
+    border-top: 7px solid rgb(255, 255, 255);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.linea {
+    border-radius: 10px;
+    background-color: #f0f0f0;
+}
+
+@keyframes slow-bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.animate-slow-bounce {
+    animation: slow-bounce 2s infinite;
+}
+
+.bg-fondo-seccions {
+    background-color: rgb(12, 12, 12);
+}

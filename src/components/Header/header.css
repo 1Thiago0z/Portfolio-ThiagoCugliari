@@ -1,0 +1,179 @@
+:root {
+    /* Colores principales */
+    --color-primary: #222222;
+    --color-secondary: #ffffff;
+    --color-tertiary: #0b243b;
+
+    /* Tipografías */
+    --font-family-sans: 'Roboto', sans-serif;
+    --font-family-serif: 'Merriweather', serif;
+}
+
+.fondo_navbar {
+    background-color: rgb(0, 0, 0);
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+
+    50% {
+        width: 100%;
+    }
+
+    100% {
+        width: 0;
+    }
+}
+
+.waves {
+    width: 100%;
+    height: 100px;
+    background-color: #141414;
+    position: absolute;
+    animation: waveColorChange 5s infinite ease-in-out;
+}
+
+.animate-write {
+    display: inline-block;
+    font-family: "Courier New", monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: blinkCursor 7s step-end infinite, typing 8s steps(50) infinite;
+}
+
+.text-dev {
+    font-family: "Orbitron", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+
+li {
+    position: relative;
+    overflow: hidden;
+}
+
+li a {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+}
+
+li:hover a {
+    color: white;
+}
+
+li div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    transition: background 0.3s ease, transform 0.3s ease;
+    z-index: 0;
+    transform: translateX(100%);
+}
+
+li:hover div {
+    background: #1e3a8a;
+    transform: translateX(0);
+}
+
+
+.animate-fadeInUp {
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.gradient-bg {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(45deg, rgb(27, 27, 27), #0c0c0c, #161515);
+    background-size: 200% 200%;
+    animation: gradientShift 10s ease infinite;
+    pointer-events: none;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+@keyframes neon-pulse {
+    0% {
+        box-shadow:
+            0 0 10px rgba(59, 130, 246, 0.8),
+            0 0 20px rgba(59, 130, 246, 0.8),
+            0 0 30px rgba(59, 130, 246, 0.8);
+    }
+
+    50% {
+        box-shadow:
+            0 0 20px rgba(59, 130, 246, 1),
+            0 0 40px rgba(59, 130, 246, 1),
+            0 0 60px rgba(59, 130, 246, 1);
+    }
+
+    100% {
+        box-shadow:
+            0 0 10px rgba(59, 130, 246, 0.8),
+            0 0 20px rgba(59, 130, 246, 0.8),
+            0 0 30px rgba(59, 130, 246, 0.8);
+    }
+}
+
+.neon-effect {
+    box-shadow:
+        0 0 10px rgba(59, 130, 246, 0.8),
+        0 0 20px rgba(59, 130, 246, 0.8),
+        0 0 30px rgba(59, 130, 246, 0.8);
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+.hover\:neon-effect:hover {
+    box-shadow:
+        0 0 20px rgba(59, 130, 246, 0.8),
+        0 0 40px rgba(59, 130, 246, 0.8),
+        0 0 60px rgba(59, 130, 246, 0.8);
+}
+
+
+@media (min-width: 992px) {
+    .text-dev {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .text-dev {
+        font-size: 1rem;
+    }
+}

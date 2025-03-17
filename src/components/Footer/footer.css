@@ -1,0 +1,15 @@
+:root {
+    /* Colores principales */
+    --color-primary: #1d2329; 
+    --color-secondary: #ffffff; 
+    --color-tertiary: #0b243b; 
+
+    /* Tipografías */
+    --font-family-sans: 'Roboto', sans-serif; 
+    --font-family-serif: 'Merriweather', serif; 
+}
+
+/* Estilo para el borde superior del footer */
+.border-footer {
+    border-top: 1px solid #ccc; 
+}

@@ -1,0 +1,76 @@
+/* Importación de Tailwind CSS */
+@import "tailwindcss";
+
+:root {
+  --b1: 100;
+  --bc: 50;
+  --fallback-bc: rgb(59, 130, 246);
+}
+
+/* Establecemos el fondo azul en Firefox */
+@supports (-moz-appearance: none) {
+  [data-theme] {
+    background-color: var(--fallback-b1, oklch(var(--b1) / 1));
+    color: var(--fallback-bc, oklch(var(--bc) / 1));
+  }
+}
+
+/* Estilos globales para el body */
+body {
+  font-family: "Kanit", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+/* Estilos globales para el HTML */
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+
+  scroll-behavior: smooth;
+}
+
+
+.gtranslate_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  /* Espacio entre elementos */
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  /* Borde ligero */
+  border-radius: 5px;
+  /* Bordes redondeados */
+  background-color: #f8f9fa;
+  /* Fondo claro */
+}
+
+/* Estilos para el dropdown */
+.gtranslate_wrapper select {
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  background-color: white;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+/* Cambiar color al pasar el mouse */
+.gtranslate_wrapper select:hover {
+  border-color: #007bff;
+}
+
+/* Cambiar color cuando está seleccionado */
+.gtranslate_wrapper select:focus {
+  outline: none;
+  border-color: #0056b3;
+  box-shadow: 0 0 5px rgba(0, 91, 187, 0.5);
+}
