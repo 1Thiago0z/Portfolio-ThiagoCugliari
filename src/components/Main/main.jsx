@@ -8,6 +8,7 @@ import "./main.css";
 import profileImage from '/profile.jpg';
 import img_proyect1 from '/proyecto1.png';
 import img_proyect2 from '/proyecto2.png';
+import img_proyect3 from '/proyecto3.png';
 import { SiNextdotjs } from "react-icons/si";
 
 const Main = () => {
@@ -143,7 +144,7 @@ const Main = () => {
 
 
             {/* Sección Proyectos */}
-            <section id="Mis proyectos" className="bg-fondo-seccions h-100vh md:h-auto lg:h-auto py-20 lg:pb-40 lg:pt-40" data-aos="fade-up">
+            <section id="Mis proyectos" className="bg-fondo-seccions h-100vh md:h-auto lg:h-auto py-20 lg:pb-40 lg:pt-40">
                 <div className="mx-auto w-full max-w-6xl container px-4 md:px-10">
 
                     {/* Título de la sección */}
@@ -156,7 +157,7 @@ const Main = () => {
                     </div>
 
                     {/* Contenido de los proyectos */}
-                    <div className="grid gap-20 lg:gap-8 md:gap-5 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 cursor-pointer justify-items-center items-center">
+                    <div className="grid gap-20 lg:gap-8 md:gap-5 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 cursor-pointer justify-items-center items-center">
 
                         {/* Proyecto 1 */}
                         <div className="border-2 border-gray-500 overflow-hidden transition-all scale-proyect flex flex-col justify-between shadow-[0px_0px_10px] shadow-[#7d8496]" data-aos="zoom-in">
@@ -215,6 +216,39 @@ const Main = () => {
                                     <a
                                         className="bg-blue-transparent border border-blue-900 text-white py-2 px-6 text-lg font-semibold hover:bg-blue-600 transition ease flex items-center gap-2"
                                         href="https://thermo-lock-tp.vercel.app/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        Ir a la web <FaLink className="text-white text-lg" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                         <div className="border-2 border-gray-500 overflow-hidden transition-all scale-proyect flex flex-col justify-between shadow-[0px_0px_10px] shadow-[#7d8496]" data-aos="zoom-in">
+                            <div className="w-full">
+                                <img src={img_proyect3} alt="Proyecto 2" className="w-full h-full object-cover" />
+                            </div>
+                            <div className="p-4">
+                                <h3 className="text-3xl font-semibold mt-6 text-white text-center">PROYECTO 3</h3>
+                                <p className="text-gray-400 mt-2 text-1xl text-center">
+                                    Distribución Mataderos SRL ofrece una amplia gama de productos de consumo masivo
+                                </p>
+                                {/* Tecnologías */}
+                                <div className="flex items-center justify-center gap-2 mt-4">
+                                    <FaHtml5 className="text-orange-600 text-4xl" />
+                                    <span className="text-white text-lg font-semibold">HTML</span>
+                                    <FaCss3Alt className="text-blue-500 text-4xl" />
+                                    <span className="text-white text-lg font-semibold">CSS</span>
+                                    <FaJs className="text-yellow-500 text-4xl" />
+                                    <span className="text-white text-lg font-semibold">JS</span>
+                                </div>
+                                {/* Enlace a la web */}
+                                <div className="flex items-center justify-center mt-4 gap-2">
+                                    <a
+                                        className="bg-blue-transparent border border-blue-900 text-white py-2 px-6 text-lg font-semibold hover:bg-blue-600 transition ease flex items-center gap-2"
+                                        href="http://mataderosdistribucionessrrl.com/"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >

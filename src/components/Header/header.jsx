@@ -125,7 +125,7 @@ export const Header = () => {
       </header>
 
       {/* Sección Hero */}
-      <section className="md:h-screen lg:h-[100vh] pt-20 lg:pt-40 md:py-20 bg-[#0c0c0c] flex items-start justify-center text-white relative overflow-hidden" id="inicio">
+      <section className="md:h-screen lg:h-[100vh] pt-20 pb-10 lg:pt-40 md:py-20 bg-[#0c0c0c] flex items-start justify-center text-white relative overflow-hidden" id="inicio">
         <div className="container mx-auto px-4 text-left relative">
           <h1 className="text-4xl lg:text-6xl font-bold">HOLA, SOY THIAGO CUGLIARI</h1>
           <hr className="border border-white lg:w-1/2 w-[80%] mt-5 mb-5 text-left" />
